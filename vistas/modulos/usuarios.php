@@ -177,7 +177,8 @@
         </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+        <button type="submit" class="btn btn-primary ">Guardar cambios</button>
       </div>
     </div>
   </div>
