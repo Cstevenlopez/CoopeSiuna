@@ -1,17 +1,27 @@
-<header class="main-header">
+ <header class="main-header">
+ 	
+	<!--=====================================
+	LOGOTIPO
+	======================================-->
+	<a href="inicio" class="logo">
+		
+		<!-- logo mini -->
+		<span class="logo-mini">
+			
+			<img src="vistas\img\plantilla\logo-mini.png" class="img-responsive">
 
- <!--Logotipo coopesiuna-->
-  <a href="" class="logo">
+		</span>
 
-  <!-- logo mini -->
-  <span class="logo-mini">
-  <img src="vistas/img/plantilla/logo-mini.png" class="img-responsive">
-  </span>
-  <!-- Logo normal -->
-  <span class="logo-lg">
-  <img src="vistas/img/plantilla/LOGO DE COPESIUNA(1).jpg" class="img-responsive">
-  </span>
-  </a>
+		<!-- logo normal -->
+
+		<span class="logo-lg">
+			
+			<img src="vistas\img\plantilla\LOGO DE COPESIUNA(1).jpg" class="img-responsive">
+
+		</span>
+
+	</a>
+
 	<!--=====================================
 	BARRA DE NAVEGACIÓN
 	======================================-->
@@ -35,7 +45,7 @@
 					
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						
-						<img src="vistas/img/usuarios/Defecto/Anonimo.png" class="user-image">
+						<img src="vistas\img\usuarios\Defecto\Anonimo.png" class="user-image">
 
 						<span class="hidden-xs">Usuario Administrador</span>
 
@@ -64,4 +74,5 @@
 		</div>
 
 	</nav>
-</header>
+
+ </header>

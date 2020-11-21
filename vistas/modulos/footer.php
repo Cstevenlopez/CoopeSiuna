@@ -1,6 +1,6 @@
 <footer class="main-footer">
 	
-	<strong>Copyright &copy; 2020 <a href="https://www.facebook.com" target="_blank">COOPESIUNA</a>.</strong>
+	<strong>Copyright &copy; 2020 <a href="#" target="_blank">COPESIUNA</a>.</strong>
 
 	Todos los derechos reservados.
 
