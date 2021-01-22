@@ -172,9 +172,9 @@
 
               <input type="file" class="nuevaFoto" name="nuevaFoto">
 
-              <p class="help-block">Peso máximo de la foto 200MB</p>
+              <p class="help-block">Peso máximo de la foto 2MB</p>
 
-              <img src="vistas\img\usuarios\Defecto\Anonimo.png" class="img-thumbnail" style="width:120px;" >
+              <img src="vistas\img\usuarios\Defecto\Anonimo.png" class="img-thumbnail previsualizar" style="width:120px;" >
 
               </div>
 
