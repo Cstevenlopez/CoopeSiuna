@@ -45,9 +45,23 @@
 					
 					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 						
-						<img src="vistas\img\usuarios\Defecto\Anonimo.png" class="user-image">
+				<!-- Aqui se pone una condicion de que si el ususario no tiene foto que se mueste la imagen por defecto y si no que cargue la foto -->
 
-						<span class="hidden-xs">Usuario Administrador</span>
+				<?php
+						
+						if($_SESSION["foto"] != ""){
+
+							echo '<img src="'.$_SESSION["foto"]. '" class="user-image">';
+
+						} else{
+
+							echo '<img src="vistas\img\usuarios\Defecto\Anonimo.png" class="user-image">';
+
+						}
+
+					 ?>
+
+						<span class="hidden-xs"><?php  echo $_SESSION["nombre"] ?></span>
 
 					</a>
 
