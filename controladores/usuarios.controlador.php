@@ -117,9 +117,11 @@ class ControladorUsuarios{
 	}
 			$tabla = "usuarios";
 
+			$encriptar = crypt($_POST["nuevoPassword"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
+
 			$datos = array("nombre" => $_POST["nuevoNombre"],
 						   "usuario" => $_POST["nuevoUsuario"],
-						   "password" => $_POST["nuevoPassword"], 
+						   "password" => $encriptar, 
 						   "perfil" => $_POST["nuevoPerfil"],
 							"foto" =>$ruta);
 			
