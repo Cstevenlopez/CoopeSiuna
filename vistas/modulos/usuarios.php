@@ -19,22 +19,16 @@
   </section>
 
   <section class="content">
- 
     <div class="box">
-      <div class="box-header with-border">
-        
+      <div class="box-header with-border">     
         <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarUsuario">
         Agregar usuario
         </button>
-
         </div>
       </div>
       <div class="box-body">
-        
         <table class="table table-bordered table-striped dt-responsive tablas">
-
         <thead>
-
               <tr>
               <th style="width:10px;">#</th>
               <th>Nombre</th>
@@ -45,17 +39,13 @@
               <th>Último login</th>
               <th>Acciones</th>
               </tr>
-
         </thead>
-
           <tbody>
-
           <!-- Mostrar los datos de la base de datos en tiempo real -->
           <?php
 
           $item = null;
           $valor = null;
-
           $usuarios = ControladorUsuarios::ctrMostrarUsuarios($item, $valor);
 
           foreach ($usuarios as $key => $value){
@@ -65,6 +55,7 @@
               <td>1</td>
               <td>'.$value["nombre"].'</td>
               <td>'.$value["usuario"].'</td>';
+
               if($value["foto"] != "")
               {
                 echo '<td><img src="'.$value["foto"].'" class="img-thumbnail" width="40px"></td>';
@@ -82,7 +73,6 @@
               <div class="btn-group">
               <button class="btn btn-warning btnEditarUsuario" idUsuario="'.$value["id"].'" data-toggle="modal" 
               data-target="#modalEditarUsuario"><i class="fa fa-pencil"></i></button>
-
               <button class="btn btn-danger"><i class="fa fa-times"></i></button>
               </div>
               </td>
