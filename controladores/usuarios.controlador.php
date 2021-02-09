@@ -18,21 +18,30 @@ class ControladorUsuarios{
 				$encriptar = crypt($_POST["ingPassword"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
 
 				$respuesta = ModeloUsuarios::MdlMostrarUsuarios($tabla, $item, $valor);
+				
 
 				if($respuesta["usuario"] == $_POST["ingUsuario"] && $respuesta["password"] == $encriptar){
 
-					$_SESSION["iniciarSesion"] = "ok";
-					$_SESSION["id"] = $respuesta["id"];
-					$_SESSION["nombre"] = $respuesta["nombre"];
-					$_SESSION["usuario"] = $respuesta["usuario"];
-					$_SESSION["foto"] = $respuesta["foto"];
-					$_SESSION["perfil"] = $respuesta["perfil"];
 
-					echo '<script>
+					if($respuesta["estado"] ==1 ){
 
-						window.location = "inicio";
+						$_SESSION["iniciarSesion"] = "ok";
+						$_SESSION["id"] = $respuesta["id"];
+						$_SESSION["nombre"] = $respuesta["nombre"];
+						$_SESSION["usuario"] = $respuesta["usuario"];
+						$_SESSION["foto"] = $respuesta["foto"];
+						$_SESSION["perfil"] = $respuesta["perfil"];
+	
+						echo '<script>
+	
+							window.location = "inicio";
+	
+						</script>';
+					}else{
 
-					</script>';
+						echo '<br><div class="alert alert-danger">El usuario aún no está activado</div>';
+
+					}
 
 				}else{
 
@@ -126,10 +135,10 @@ class ControladorUsuarios{
 
 			$encriptar = crypt($_POST["nuevoPassword"], '$2a$07$asxx54ahjppf45sd87a5a4dDDGsystemdev$');
 
-			$datos = array("nombre" => $_POST["nuevoNombre"],
-						   "usuario" => $_POST["nuevoUsuario"],
-						   "password" => $encriptar, 
-						   "perfil" => $_POST["nuevoPerfil"],
+$datos = array("nombre" => $_POST["nuevoNombre"],
+			"usuario" => $_POST["nuevoUsuario"],
+			"password" => $encriptar, 
+			"perfil" => $_POST["nuevoPerfil"],
 							"foto" =>$ruta);
 			
 			$respuesta = ModeloUsuarios::mdlIngresarUsuario($tabla, $datos);

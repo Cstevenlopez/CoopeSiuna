@@ -76,3 +76,29 @@ $(".btnEditarUsuario").click(function(){
     })
 
 })
+
+//ACTIVAR USUARIO
+
+$(".btnActivar").click(function(){
+
+    var idUsuario = $(this).attr("idUsuario");
+var estadorUsuario = $(this).attr("estadoUsuario");
+
+var datos = new FormData();
+datos.append("activarId", idUsuario);
+datos.append("activarUsuario", estadoUsuario);
+
+$.ajax({
+    url:"ajax/usuarios.ajax.php",
+    method: "POST",
+    data: datos,
+    cache: false,
+    contentType: false,
+    processData: false,
+    success: function(respuesta){
+
+        }
+    })
+
+})
+
