@@ -1,137 +1,204 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+<!-- Hi, this is a template free, please suscribe to my chanel
+AlexCG Design, Thank you, I hope this template helps you -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>COOPESIUNA,R.L</title>
-    <link rel="shortcut icon" href="img/Logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="../CoopeSiuna/css/Style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
-    <!--En el head para los iconos-->
-    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-    <!--Fin del link iconos-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Página web completa</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
 </head>
-<div class="contenedor-menu">
-  <nav class="menu">
-      <a href="#">Inicio</a>  
-      <a href="">Consultas</a> 
-      <a href="">Ingresar</a> 
-      <a href="#contacto">Contacto</a> 
-  </nav>
-</div>
-<body>
-    <header>
-        <div class="contenedor1">
-            <div class="slider-contenedor">  
-                <section class="contenido-slider">
-                    <img src="img/5.jpg" alt=""> 
-                </section>
-                <section class="contenido-slider">
-                    <img src="img/4.jpg" alt=""> 
-                </section>
-                <section class="contenido-slider">
-                    <img src="img/11.jpg" alt=""> 
-                </section>
-                <section class="contenido-slider">
-                    <img src="img/12.jpg" alt=""> 
-                </section>
-                <section class="contenido-slider">
-                    <img src="img/10.jpg" alt=""> 
-                </section>
 
-            </div>
-            </div>
-            <section>
-                <div>
+<body class="hidden">
+    <div class="centrado" id="onload">
+        <div class="lds-facebook"><div></div><div></div><div></div></div>
+    </div>
+    <header>
+        <nav id="nav" class="nav1">
+            <div class="contenedor-nav">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
                 </div>
-            </section>
+                <div class="enlaces" id="enlaces">
+                    <a href="#" id="enlace-inicio" class="btn-header">Inicio</a>
+                    <a href="#" id="enlace-equipo" class="btn-header">Equipo</a>
+                    <a href="#" id="enlace-servicio" class="btn-header">Servicios</a>
+                    <a href="#" id="enlace-trabajo" class="btn-header">Trabajos</a>
+                    <a href="#" id="enlace-contacto" class="btn-header">Contacto</a>
+                </div>
+                <div class="icono" id="open">
+                    <span>&#9776;</span>
+                </div>
+            </div>
+        </nav>
+        <div class="textos">
+            <h1>AlexCG Design</h1>
+            <h2>Agencia de desarrollo web</h2>
+        </div>
     </header>
     <main>
-      </section>  
-      <section class="portafolio2">
-          <div class="contenedor">
-              <h2 class="titulo">Sitios</h2>
-              <div class="line2"></div>
-              <div class="galeria-port2">
-                  <div class="imagen-port2">
-
-                      <img src="img/sergio-alves-santos-PeDrafNlY2Y-unsplash.jpg" alt="">
-                      <div class="hover-galeria2">
-                        <a href="Bares.html" class="link">Bares</a>
-                      </div>
-                  </div>
-                  <div class="imagen-port2">
-                    <img src="img/kenny-luo-7IiPopynx18-unsplash.jpg" alt="">
-                    <div class="hover-galeria2">
-                        <a href="Restaurantes.html" class="link">Restaurantes</a>
+        <section class="team contenedor" id="equipo">
+            <h3>Nuestro equipo</h3>
+            <p class="after">Conoce a la gente asombrosa y creativa</p>
+            <div class="card">
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people1.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>K</h4>
+                        <p>Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
-          </div>
-          <div>
-              <script src="../CoopeSiuna/js/main.js"></script>
-          </div>     
-      </section>
-      <section class="contenedor-contacto">
-        <div class="otra-informacion">
-            <p>Ubicación de COOPESIUNA,R.L</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15502.814868669137!2d-84.8998781!3d13.7363793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4258180356c201a3!2sCOOPESIUNA%2CR.L!5e0!3m2!1ses!2sni!4v1606077376343!5m2!1ses!2sni" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-         </div>
-        <div class="form-contacto">
-            <fieldset>
-                <legend>Formulario de contacto</legend>
-                <div class="contenedor-input">
-                    <label>Nombre</label>
-                    <input type="text" name="Nombre" id="nombre" placeholder="Ingrese su nombre" required>
-                    <br>
-                    <label for="">Email</label>
-                    <input type="Email" name="Email" id="Email" placeholder="Ejemplo: Holamundo@gmail.com" required>
-                    <br>
-                    <label for="">Asunto</label>
-                    <input type="text" name="Asunto" id="Asunto" placeholder="Cabecera del mensaje" required>
-                    <br>
-                    <div class="mensaje">
-                    <label for="">Mensaje</label>
-                    <input type="text" name="Mensaje" id="Mensaje" placeholder="Describa su mensaje o comentario" required>
-                </div>
-                    <div class="Botones">
-                        <input type="submit" value="Enviar">
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people2.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>C</h4>
+                        <p>Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
-            </fieldset>
+                <div class="content-card">
+                    <div class="people">
+                        <img src="img/people3.jpg" alt="">
+                    </div>
+                    <div class="texto-team">
+                        <h4>M</h4>
+                        <p>Lorem ipsum dolor sit.</p>
+                    </div>
                 </div>
-    </section>
+            </div>
+        </section>
+        <section class="about" id="servicio">
+            <div class="contenedor">
+                <h3>Nuestros servicios</h3>
+                <p class="after">Siempre mejorando para ti</p>
+                <div class="servicios">
+                    <div class="caja-servicios">
+                        <img src="img/heart.png" alt="">
+                        <h4>Creativos y asombrosos</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/responsive.png" alt="">
+                        <h4>Creativos y asombrosos</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                    <div class="caja-servicios">
+                        <img src="img/efectos.png" alt="">
+                        <h4>Creativos y asombrosos</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work contenedor" id="trabajo">
+            <h3>Nuestro trabajo</h3>
+            <p class="after">Hacemos de algo simple algo extraordinario</p>
+            <div class="botones-work">
+                <ul>
+                    <li class="filter active" data-nombre='todos'>Todos</li>
+                    <li class="filter" data-nombre='diseño'>Diseño</li>
+                    <li class="filter" data-nombre='programacion'>Programacion</li>
+                    <li class="filter" data-nombre='marketing'>Marketing</li>
+                </ul>
+            </div>
+            <div class="galeria-work">
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/programacion1.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Programacion</h4>
+                    </div>
+                </div>
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/programacion2.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Programacion</h4>
+                    </div>
+                </div>
+                <div class="cont-work programacion">
+                    <div class="img-work">
+                        <img src="img/programacion3.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Programacion</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/diseño1.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Diseño</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/diseño2.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Diseño</h4>
+                    </div>
+                </div>
+                <div class="cont-work diseño">
+                    <div class="img-work">
+                        <img src="img/diseño3.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Diseño</h4>
+                    </div>
+                </div>
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/marketing1.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Marketing</h4>
+                    </div>
+                </div>
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/marketing2.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Marketing</h4>
+                    </div>
+                </div>
+                <div class="cont-work marketing">
+                    <div class="img-work">
+                        <img src="img/marketing3.jpeg" alt="">
+                    </div>
+                    <div class="textos-work">
+                        <h4>Marketing</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <!--Inicio del footer-->
-<footer id="contacto">
-    <div class="contenedor footer-contenido">
-        <div class="contact-us">
-            <p>Todos los derechos reservados © Geronimo Navas, Cesar Steven y Excy Obregon</p>
+    <footer id="contacto">
+        <div class="footer contenedor">
+            <div class="marca-logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="iconos">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-github"></i>
+            </div>
+            <p>La pasión e innovación es lo que nos distingue del resto</p>
         </div>
-        <div class="Acerca-de">
 
-        </div>
-        <div class="social-media">
-            <a href="#" class="social-media-icon">
-                <i class='bx bxl-facebook-square'></i>
-             </a>
-             <a href="#" class="social-media-icon">
-                <i class='bx bxl-instagram-alt' ></i>
-             </a>
-             <a href="#" class="social-media-icon">
-                <i class='bx bx-mail-send'></i>
-             </a>
-             <a href="#" class="social-media-icon">
-                <i class='bx bxl-youtube'></i>
-             </a>
-             <a href="#" class="social-media-icon">
-                <i class='bx bxl-twitter' ></i>
-             </a>
-        </div>
-        </div>
-    </div>
-<div class="line"> </div>
-</footer>
-<!--Fin del foote-->
+    </footer>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/filtro.js"></script>
 </body>
-<!--Hola-->
 </html>
